@@ -3,16 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Test orientation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style media="screen">
-    @media screen and (orientation: landscape) {
+    @media (orientation: landscape) {
       html {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: translate(50px,50px);
         transform: rotate(-90deg);
-        transform-origin: left top;
+
+        /*transform-origin: left top;
         width: 100vh;
         overflow-x: hidden;
         position: absolute;
         top: 100%;
-        left: 0;
+        left: 10;*/
       }
     }
     </style>
