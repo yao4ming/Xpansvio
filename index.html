@@ -6,6 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="mobile_icon.png">
+  @media (max-height: 568px) and (max-width: 320px) {
+    html{
+        -webkit-transform: rotate(-90deg);
+           -moz-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+             -o-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+        -webkit-transform-origin: left top;
+           -moz-transform-origin: left top;
+            -ms-transform-origin: left top;
+             -o-transform-origin: left top;
+                transform-origin: left top;
+        width: 320px; /*this is the iPhone screen width.*/
+        position: absolute;
+        top: 100%;
+            left: 0
+    }
+  }
 <!--   <link rel="apple-touch-icon" href="mobile_icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
