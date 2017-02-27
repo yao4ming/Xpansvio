@@ -1,5 +1,5 @@
 {
-	"name": "Web Application Manifest Sample",
-	"display": "browser",
+	"name": "Xpansivo2017",
+	"display": "standalone",
 	"orientation": "landscape"
 }
