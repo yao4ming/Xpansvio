@@ -62,6 +62,7 @@
   <script type="text/javascript">
     $(document).ready(function () {
       function reorient(e) {
+        console.log("orientation changed");
         var portrait = (window.orientation % 180 == 0);
           $("body > div").css("-webkit-transform", !portrait ? "rotate(-90deg)" : "");
         }
