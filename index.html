@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
-  <link rel="manifest" href="manifest.json">
+  <!-- <link rel="manifest" href="manifest.json"> -->
   <!-- <link rel="apple-touch-icon" href="mobile_icon.png">
   <style media="screen">
     @media (orientation: landscape){
@@ -53,6 +53,23 @@
 
 
 	</script> -->
+  <style media="screen">
+    html {
+      -webkit-transition: all 1s ease-in-out;
+    }
+  </style>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      function reorient(e) {
+        var portrait = (window.orientation % 180 == 0);
+          $("body > div").css("-webkit-transform", !portrait ? "rotate(-90deg)" : "");
+        }
+        window.onorientationchange = reorient;
+        window.setTimeout(reorient, 0);
+      });
+
+  </script>
 
 </head>
   <body>
