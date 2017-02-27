@@ -7,7 +7,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="mobile_icon.png">
   <style media="screen">
-    @media (max-height: 568px) and (max-width: 320px) {
+    @media (max-height: 568px) and (max-width: 320px) and (orientation: protrait){
       html{
           -webkit-transform: rotate(-90deg);
              -moz-transform: rotate(-90deg);
@@ -22,10 +22,7 @@
           width: 320px; /*this is the iPhone screen width.*/
           position: absolute;
           top: 100%;
-              left: 0
-      },
-      body {
-        background-color: red;
+          left: 0
       }
     }
   </style>
